@@ -53,6 +53,12 @@ Predict whether a vendor invoice should be flagged for manual approval due to ab
 
 <h2><a class="anchor" id="data-sources"></a>📂 Data Sources</h2>
 
+> ⚠️ **Note:** The dataset (`inventory.db`) is too large to host on GitHub. You can download it from Google Drive:
+>
+> 📁 **[Download Dataset from Google Drive](https://drive.google.com/drive/folders/1w4Ed0bZP2zINcr58iv_MnEI6yOLulcTs?usp=sharing)**
+>
+> After downloading, place the file at `data/inventory.db` before running the project.
+
 Data is stored in a relational SQLite database (`inventory.db`) with the following tables:
 
 - `vendor_invoice` – Invoice-level financial and timing data  
@@ -124,7 +130,7 @@ A **Streamlit application** demonstrates the complete pipeline:
 inventory-invoice-analytics/
 │
 ├── data/
-│   └── inventory.db
+│   └── inventory.db          # ⬅ Download from Google Drive (see Data Sources)
 │
 ├── freight_cost_prediction/
 │   ├── data_preprocessing.py
@@ -161,23 +167,22 @@ inventory-invoice-analytics/
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/inventory-invoice-analytics.git
+https://github.com/yogant18/Vendor-Invoice-Intelligence-System.git
 ```
-2. Train and Save Best Fit Models:
+
+2. Download the dataset from [Google Drive](https://drive.google.com/drive/folders/1w4Ed0bZP2zINcr58iv_MnEI6yOLulcTs?usp=sharing) and place it at `data/inventory.db`.
+
+3. Train and Save Best Fit Models:
 ```bash
 python freight_cost_prediction/train.py
 python invoice_flagging/train.py
 ```
-3. Test Models:
+4. Test Models:
 ```bash
 python inference/predict_freight.py
 python inference/predict_invoice_flag.py
 ``` 
-4. Open Application:
+5. Open Application:
 ```bash
 streamlit run app.py
 ```
-
-
-
-
