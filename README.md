@@ -140,7 +140,6 @@ inventory-invoice-analytics/
 ├── invoice_flagging/
 │   ├── data_preprocessing.py
 │   ├── model_evaluation.py
-│   ├── model_evaluation.py
 │   └── train.py
 │
 ├── inference/
@@ -157,6 +156,7 @@ inventory-invoice-analytics/
 │   └── Predict Freight Cost.ipynb
 │
 ├── app.py
+├── requirements.txt
 ├── README.md
 └── .gitignore
 ```
@@ -165,24 +165,33 @@ inventory-invoice-analytics/
 
 <h2><a class="anchor" id="how-to-run-this-project"></a>How to Run This Project</h2>
 
-1. Clone the repository:
+1. **Clone the repository:**
 ```bash
-https://github.com/yogant18/Vendor-Invoice-Intelligence-System.git
+git clone https://github.com/yogant18/Vendor-Invoice-Intelligence-System.git
+cd Vendor-Invoice-Intelligence-System
 ```
 
-2. Download the dataset from [Google Drive](https://drive.google.com/drive/folders/1w4Ed0bZP2zINcr58iv_MnEI6yOLulcTs?usp=sharing) and place it at `data/inventory.db`.
+2. **Install dependencies:**
+```bash
+pip install -r requirements.txt
+```
 
-3. Train and Save Best Fit Models:
+3. **Download dataset:**  
+Download the dataset from [Google Drive](https://drive.google.com/drive/folders/1w4Ed0bZP2zINcr58iv_MnEI6yOLulcTs?usp=sharing) and place it at `data/inventory.db`.
+
+4. **Train and Save Best Fit Models (Optional if pre-trained models exist):**
 ```bash
 python freight_cost_prediction/train.py
 python invoice_flagging/train.py
 ```
-4. Test Models:
+
+5. **Test Models:**
 ```bash
 python inference/predict_freight.py
 python inference/predict_invoice_flag.py
 ``` 
-5. Open Application:
+
+6. **Launch Application:**
 ```bash
 streamlit run app.py
 ```
