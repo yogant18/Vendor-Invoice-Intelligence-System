@@ -1,8 +1,14 @@
 # Vendor Invoice Intelligence System  
 **Freight Cost Prediction & Invoice Risk Flagging**
 
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://vendor-invoice-intelligence-system-rrbbsikfmqmva5dmtpsuax.streamlit.app/)
+
+> 🚀 **Live Demo:** Explore the deployed application live here:  
+> 🔗 **[https://vendor-invoice-intelligence-system-rrbbsikfmqmva5dmtpsuax.streamlit.app/](https://vendor-invoice-intelligence-system-rrbbsikfmqmva5dmtpsuax.streamlit.app/)**
+
 ## 📌 Table of Contents
 - <a href="#project-overview">Project Overview</a>
+- <a href="#live-demo">Live Demo</a>
 - <a href="#business-objectives">Business Objectives</a>
 - <a href="#data-sources">Data Sources</a>
 - <a href="#eda">Exploratory Data Analysis</a>
@@ -20,6 +26,13 @@ This project implements an **end-to-end machine learning system** designed to su
 
 1. **Predicting expected freight cost** for vendor invoices.
 2. **Flagging high-risk invoices** that require manual review due to abnormal cost, freight, or operational patterns.
+
+---
+
+<h2><a class="anchor" id="live-demo"></a>🌐 Live Demo</h2>
+
+The interactive application is live and accessible in the cloud:  
+👉 **[Launch Vendor Invoice Intelligence Portal](https://vendor-invoice-intelligence-system-rrbbsikfmqmva5dmtpsuax.streamlit.app/)**
 
 ---
 
@@ -121,6 +134,9 @@ A **Streamlit application** demonstrates the complete pipeline:
 - Predict expected freight
 - Flag invoices in real time
 - Provide human-readable explanations
+
+🔗 **Live Application:** [https://vendor-invoice-intelligence-system-rrbbsikfmqmva5dmtpsuax.streamlit.app/](https://vendor-invoice-intelligence-system-rrbbsikfmqmva5dmtpsuax.streamlit.app/)  
+[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://vendor-invoice-intelligence-system-rrbbsikfmqmva5dmtpsuax.streamlit.app/)
 
 ---
 
